@@ -31,7 +31,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
             <nav className="w-full flex justify-evenly">
               <Link href="/home">HOME</Link>
               <Link href="/home/about">About</Link>
-              <Link href="/">Contact</Link>
+              <Link href="/classroom/students">Contact</Link>
               <Link href="/">Career</Link>
             </nav>
           </header>
