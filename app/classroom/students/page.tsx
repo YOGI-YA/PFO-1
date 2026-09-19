@@ -1,3 +1,5 @@
+import FilterUsers from "@/components/FilteredUsers"
+
 type stuents = {
     id :number,
     name:string,
@@ -12,11 +14,7 @@ export default async function Stuents(){
 
     return (
         <div>
-            {
-                result?.map((students:stuents) => (
-                    <li key= {students.id}>{students.name} - {students.username} - {students.email}</li>
-                ))
-            }
+            <FilterUsers users={result}/>
         </div>
     )
 
