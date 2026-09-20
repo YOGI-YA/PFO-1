@@ -1,7 +1,8 @@
+import someAction from "@/app/actions/someaction/page"
 export default function Button({text}:{text:string}){
     return (
-        <button onClick={() =>alert("hola amigos kese ho thik ho")}>
+        <button onClick={() =>someAction()  }>
             {text}
         </button>
-    )
+    )   
 }
