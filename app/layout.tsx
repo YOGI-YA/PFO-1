@@ -27,13 +27,13 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       <body className="min-h-full flex flex-col">
         <div>
           <header className="flex justify-start pt-4">
-            <h2 className="w-1/3 pl-4 tracking-wider text-2xl font-bold">WEBSITE</h2>
-            <nav className="w-full flex justify-evenly">
+            <h2 className="w-1/3 pl-4 tracking-wider text-2xl font-bold">REBUILD.AI</h2>
+            {/* <nav className="w-full flex justify-evenly">
               <Link href="/home">HOME</Link>
               <Link href="/home/about">About</Link>
               <Link href="/classroom/students">Contact</Link>
               <Link href="/">Career</Link>
-            </nav>
+            </nav> */}
           </header>
         </div>
         {children}
