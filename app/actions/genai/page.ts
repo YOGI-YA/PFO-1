@@ -1,6 +1,11 @@
+"use server"
+
 import { GoogleGenAI } from "@google/genai";
 
-const ai = new GoogleGenAI({});
+
+const ai = new GoogleGenAI({
+    apiKey:process.env.GEMINI_API_KEY,
+});
 
 export default async function geminiCall({prompt}:{prompt:string}){
     const interaction = await ai.interactions.create({
